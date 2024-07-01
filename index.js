@@ -61,9 +61,12 @@ const record = [
     { year: "1960", result: "N/A"}
   ]
 
+//the function superbowlWin takes in a callback function as an argument
+//element represents each element(year) in array of record
+function superbowlWin(element){
+ const winYear = element.find(element=>element.result === "W")
 
-function superbowlWin(record){
- const winYear = record.find(record=>record.result === "W")
+ //This narrows down to the year of first win on the array starting from the top
  return winYear? winYear.year : undefined;
 }
 console.log(superbowlWin(record))
