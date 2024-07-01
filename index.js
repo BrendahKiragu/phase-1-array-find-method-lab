@@ -62,8 +62,8 @@ const record = [
   ]
 
 
-function superbowlWin(element){
-  const winYear = record.find(element=> result ==="W")
-  return 'It is a win'
+function superbowlWin(record){
+ const winYear = record.find(record => record.result === "W")
+ return winYear;
 }
 console.log(superbowlWin(record))
